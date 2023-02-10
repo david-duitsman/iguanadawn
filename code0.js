@@ -560,7 +560,7 @@ gdjs.Untitled_32sceneCode.eventsList10(runtimeScene);
 
 gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = false;
 {
-gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.hasTouchEnded(runtimeScene, 1);
+gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.hasTouchEnded(runtimeScene, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(3)));
 }if (gdjs.Untitled_32sceneCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Site2"), gdjs.Untitled_32sceneCode.GDSite2Objects1);
 {for(var i = 0, len = gdjs.Untitled_32sceneCode.GDSite2Objects1.length ;i < len;++i) {
