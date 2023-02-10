@@ -240,7 +240,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.25
 
 {
 
-gdjs.copyArray(asyncObjectsList.getObjects("Site2"), gdjs.Untitled_32sceneCode.GDSite2Objects3);
+gdjs.copyArray(gdjs.Untitled_32sceneCode.GDSite2Objects2, gdjs.Untitled_32sceneCode.GDSite2Objects3);
 
 gdjs.copyArray(runtimeScene.getObjects("Sprite1"), gdjs.Untitled_32sceneCode.GDSprite1Objects3);
 
@@ -271,7 +271,12 @@ gdjs.Untitled_32sceneCode.eventsList11(runtimeScene, asyncObjectsList);} //End o
 
 
 };gdjs.Untitled_32sceneCode.asyncCallback10443772 = function (runtimeScene, asyncObjectsList) {
+gdjs.copyArray(asyncObjectsList.getObjects("Site2"), gdjs.Untitled_32sceneCode.GDSite2Objects2);
 
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDSite2Objects2.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDSite2Objects2[i].setVariableBoolean(gdjs.Untitled_32sceneCode.GDSite2Objects2[i].getVariables().get("Firing"), false);
+}
+}
 { //Subevents
 gdjs.Untitled_32sceneCode.eventsList12(runtimeScene, asyncObjectsList);} //End of subevents
 }
@@ -291,8 +296,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5)
 }
 
 
-};gdjs.Untitled_32sceneCode.mapOfGDgdjs_46Untitled_9532sceneCode_46GDTargetRoundButtonObjects1Objects = Hashtable.newFrom({"TargetRoundButton": gdjs.Untitled_32sceneCode.GDTargetRoundButtonObjects1});
-gdjs.Untitled_32sceneCode.eventsList14 = function(runtimeScene) {
+};gdjs.Untitled_32sceneCode.eventsList14 = function(runtimeScene) {
 
 };gdjs.Untitled_32sceneCode.mapOfGDgdjs_46Untitled_9532sceneCode_46GDSite2Objects1Objects = Hashtable.newFrom({"Site2": gdjs.Untitled_32sceneCode.GDSite2Objects1});
 gdjs.Untitled_32sceneCode.mapOfGDgdjs_46Untitled_9532sceneCode_46GDSprite1Objects1Objects = Hashtable.newFrom({"Sprite1": gdjs.Untitled_32sceneCode.GDSprite1Objects1});
@@ -558,17 +562,7 @@ gdjs.Untitled_32sceneCode.eventsList13(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("TargetRoundButton"), gdjs.Untitled_32sceneCode.GDTargetRoundButtonObjects1);
 
-gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = false;
-{
-gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.Untitled_32sceneCode.mapOfGDgdjs_46Untitled_9532sceneCode_46GDTargetRoundButtonObjects1Objects, runtimeScene, true, true);
-}if (gdjs.Untitled_32sceneCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Site2"), gdjs.Untitled_32sceneCode.GDSite2Objects1);
-{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDSite2Objects1.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDSite2Objects1[i].setVariableBoolean(gdjs.Untitled_32sceneCode.GDSite2Objects1[i].getVariables().get("Firing"), false);
-}
-}}
 
 }
 
