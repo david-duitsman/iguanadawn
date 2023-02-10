@@ -570,8 +570,12 @@ gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = false;
 {
 gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.hasTouchEnded(runtimeScene, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(3)));
 }if (gdjs.Untitled_32sceneCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Message"), gdjs.Untitled_32sceneCode.GDMessageObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Site2"), gdjs.Untitled_32sceneCode.GDSite2Objects1);
-{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDSite2Objects1.length ;i < len;++i) {
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDMessageObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDMessageObjects1[i].setString("ENDED");
+}
+}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDSite2Objects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDSite2Objects1[i].setVariableBoolean(gdjs.Untitled_32sceneCode.GDSite2Objects1[i].getVariables().get("Firing"), true);
 }
 }{gdjs.evtTools.sound.playSound(runtimeScene, "d3f175cd0b845107446c68bdec2ce23d9c448062ef9f184825fb7dd644b79e16_Gun 1.aac", false, 50, 1);
