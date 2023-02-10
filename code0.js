@@ -53,7 +53,7 @@ gdjs.Untitled_32sceneCode.eventsList0 = function(runtimeScene) {
 
 gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = false;
 {
-gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = !(gdjs.evtTools.systemInfo.isMobile());
+gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = !(gdjs.evtTools.systemInfo.hasTouchScreen(runtimeScene));
 }if (gdjs.Untitled_32sceneCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("RoundJoystick"), gdjs.Untitled_32sceneCode.GDRoundJoystickObjects2);
 gdjs.copyArray(runtimeScene.getObjects("TargetRoundButton"), gdjs.Untitled_32sceneCode.GDTargetRoundButtonObjects2);
