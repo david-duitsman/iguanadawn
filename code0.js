@@ -310,9 +310,6 @@ gdjs.Untitled_32sceneCode.eventsList0(runtimeScene);
 {
 
 
-{
-{gdjs.evtTools.camera.setCameraZoom(runtimeScene, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("scope_zoom_view_value")), "", 0);
-}}
 
 }
 
@@ -333,14 +330,14 @@ gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sc
 }if (gdjs.Untitled_32sceneCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Site2"), gdjs.Untitled_32sceneCode.GDSite2Objects1);
 {gdjs.evtTools.window.setAdaptGameResolutionAtRuntime(runtimeScene, true);
-}{runtimeScene.getScene().getVariables().get("scope_zoom_view_value").setNumber(2);
+}{runtimeScene.getScene().getVariables().get("scope_zoom_view_value").setNumber(1);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("scope_view_is_zoomed"), false);
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDSite2Objects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDSite2Objects1[i].setVariableBoolean(gdjs.Untitled_32sceneCode.GDSite2Objects1[i].getVariables().get("Firing"), false);
 }
 }{runtimeScene.getScene().getVariables().get("scope_movement_speed").setNumber(4);
-}{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.Untitled_32sceneCode.GDSite2Objects1.length !== 0 ? gdjs.Untitled_32sceneCode.GDSite2Objects1[0] : null), true, "", 0);
 }{gdjs.evtTools.sound.playSound(runtimeScene, "074c17bc259fa79fb9f8dd116c632fa9dd091b7ecea97957fbf0e8f6f4121944_Horror Mytery.aac", true, 100, 1);
+}{gdjs.evtTools.window.centerWindow(runtimeScene);
 }
 { //Subevents
 gdjs.Untitled_32sceneCode.eventsList4(runtimeScene);} //End of subevents
