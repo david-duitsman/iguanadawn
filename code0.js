@@ -272,7 +272,12 @@ gdjs.Untitled_32sceneCode.eventsList11(runtimeScene, asyncObjectsList);} //End o
 
 
 };gdjs.Untitled_32sceneCode.asyncCallback12543148 = function (runtimeScene, asyncObjectsList) {
+gdjs.copyArray(asyncObjectsList.getObjects("Marker"), gdjs.Untitled_32sceneCode.GDMarkerObjects2);
 
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDMarkerObjects2.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDMarkerObjects2[i].deleteFromScene(runtimeScene);
+}
+}
 { //Subevents
 gdjs.Untitled_32sceneCode.eventsList12(runtimeScene, asyncObjectsList);} //End of subevents
 }
@@ -284,6 +289,7 @@ gdjs.Untitled_32sceneCode.eventsList13 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
+for (const obj of gdjs.Untitled_32sceneCode.GDMarkerObjects1) asyncObjectsList.addObject("Marker", obj);
 for (const obj of gdjs.Untitled_32sceneCode.GDSite2Objects1) asyncObjectsList.addObject("Site2", obj);
 runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.Untitled_32sceneCode.asyncCallback12543148(runtimeScene, asyncObjectsList)));
 }
@@ -565,10 +571,11 @@ gdjs.Untitled_32sceneCode.eventsList10(runtimeScene);
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("Marker"), gdjs.Untitled_32sceneCode.GDMarkerObjects1);
 
 gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = false;
 {
-gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.hasTouchEnded(runtimeScene, 1);
+gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.hasTouchEnded(runtimeScene, (gdjs.RuntimeObject.getVariableNumber(((gdjs.Untitled_32sceneCode.GDMarkerObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.Untitled_32sceneCode.GDMarkerObjects1[0].getVariables()).getFromIndex(0))));
 }if (gdjs.Untitled_32sceneCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Message"), gdjs.Untitled_32sceneCode.GDMessageObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Site2"), gdjs.Untitled_32sceneCode.GDSite2Objects1);
