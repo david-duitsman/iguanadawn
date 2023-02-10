@@ -3,7 +3,7 @@
   "short_name": "Test",
   "id": "com.example.gamename",
   "description": "",
-  "orientation": "landscape",
+  "orientation": "portrait",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "black",
