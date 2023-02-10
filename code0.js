@@ -310,12 +310,12 @@ gdjs.Untitled_32sceneCode.GDMarkerObjects1.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Untitled_32sceneCode.mapOfGDgdjs_46Untitled_9532sceneCode_46GDMarkerObjects1Objects, 0, 0, "");
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDMarkerObjects1.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDMarkerObjects1[i].setScale(4);
+    gdjs.Untitled_32sceneCode.GDMarkerObjects1[i].setScale(1);
 }
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDMarkerObjects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDMarkerObjects1[i].returnVariable(gdjs.Untitled_32sceneCode.GDMarkerObjects1[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.input.getStartedTouchOrMouseIdentifier(runtimeScene, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(3))));
 }
-}{runtimeScene.getScene().getVariables().getFromIndex(3).add(1);
+}{runtimeScene.getScene().getVariables().getFromIndex(3).setNumber(1);
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDMessageObjects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDMessageObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(3)));
 }
