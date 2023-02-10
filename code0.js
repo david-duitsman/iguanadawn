@@ -39,6 +39,10 @@ gdjs.Untitled_32sceneCode.GDMarkerObjects1= [];
 gdjs.Untitled_32sceneCode.GDMarkerObjects2= [];
 gdjs.Untitled_32sceneCode.GDMarkerObjects3= [];
 gdjs.Untitled_32sceneCode.GDMarkerObjects4= [];
+gdjs.Untitled_32sceneCode.GDMessageObjects1= [];
+gdjs.Untitled_32sceneCode.GDMessageObjects2= [];
+gdjs.Untitled_32sceneCode.GDMessageObjects3= [];
+gdjs.Untitled_32sceneCode.GDMessageObjects4= [];
 
 gdjs.Untitled_32sceneCode.conditionTrue_0 = {val:false};
 gdjs.Untitled_32sceneCode.condition0IsTrue_0 = {val:false};
@@ -295,6 +299,7 @@ gdjs.Untitled_32sceneCode.eventsList14 = function(runtimeScene) {
 
 
 {
+gdjs.copyArray(runtimeScene.getObjects("Message"), gdjs.Untitled_32sceneCode.GDMessageObjects1);
 gdjs.Untitled_32sceneCode.GDMarkerObjects1.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Untitled_32sceneCode.mapOfGDgdjs_46Untitled_9532sceneCode_46GDMarkerObjects1Objects, 0, 0, "");
@@ -305,6 +310,9 @@ gdjs.Untitled_32sceneCode.GDMarkerObjects1.length = 0;
     gdjs.Untitled_32sceneCode.GDMarkerObjects1[i].returnVariable(gdjs.Untitled_32sceneCode.GDMarkerObjects1[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.input.getStartedTouchOrMouseIdentifier(runtimeScene, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(3))));
 }
 }{runtimeScene.getScene().getVariables().getFromIndex(3).add(1);
+}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDMessageObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDMessageObjects1[i].setString("HERE");
+}
 }}
 
 }
@@ -703,6 +711,10 @@ gdjs.Untitled_32sceneCode.GDMarkerObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDMarkerObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDMarkerObjects3.length = 0;
 gdjs.Untitled_32sceneCode.GDMarkerObjects4.length = 0;
+gdjs.Untitled_32sceneCode.GDMessageObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDMessageObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDMessageObjects3.length = 0;
+gdjs.Untitled_32sceneCode.GDMessageObjects4.length = 0;
 
 gdjs.Untitled_32sceneCode.eventsList16(runtimeScene);
 
