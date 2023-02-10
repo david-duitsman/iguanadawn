@@ -602,9 +602,14 @@ gdjs.Untitled_32sceneCode.eventsList13(runtimeScene);} //End of subevents
 
 
 gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = false;
+gdjs.Untitled_32sceneCode.condition1IsTrue_0.val = false;
 {
 gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.hasAnyTouchOrMouseStarted(runtimeScene);
-}if (gdjs.Untitled_32sceneCode.condition0IsTrue_0.val) {
+}if ( gdjs.Untitled_32sceneCode.condition0IsTrue_0.val ) {
+{
+gdjs.Untitled_32sceneCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(3)) == 0;
+}}
+if (gdjs.Untitled_32sceneCode.condition1IsTrue_0.val) {
 {runtimeScene.getScene().getVariables().getFromIndex(3).setNumber(0);
 }
 { //Subevents
