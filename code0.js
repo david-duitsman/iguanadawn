@@ -77,7 +77,7 @@ gdjs.copyArray(runtimeScene.getObjects("Spawner"), gdjs.Untitled_32sceneCode.GDS
 {for(var i = 0, len = gdjs.Untitled_32sceneCode.GDSpawnerObjects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDSpawnerObjects1[i].hide();
 }
-}{runtimeScene.getScene().getVariables().get("spawn_location").setNumber(gdjs.randomInRange(50, 750));
+}{runtimeScene.getScene().getVariables().get("spawn_location").setNumber(gdjs.randomInRange(50, 650));
 }}
 
 }
@@ -107,7 +107,7 @@ gdjs.Untitled_32sceneCode.eventsList5 = function(runtimeScene) {
 
 {
 gdjs.copyArray(runtimeScene.getObjects("Spawner"), gdjs.Untitled_32sceneCode.GDSpawnerObjects2);
-{runtimeScene.getScene().getVariables().get("spawn_location").setNumber(gdjs.randomInRange(50, 750));
+{runtimeScene.getScene().getVariables().get("spawn_location").setNumber(gdjs.randomInRange(50, 650));
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDSpawnerObjects2.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDSpawnerObjects2[i].setX(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("spawn_location")));
 }
