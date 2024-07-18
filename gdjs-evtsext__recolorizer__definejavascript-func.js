@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Recolorizer__DefineJavaScript !== "undefined") {
 gdjs.evtsExt__Recolorizer__DefineJavaScript = {};
 
 
-gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0xb39ea8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x949660 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs.__recolorizerExtension) {
     return;
@@ -418,7 +418,7 @@ gdjs.evtsExt__Recolorizer__DefineJavaScript.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0xb39ea8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x949660(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
