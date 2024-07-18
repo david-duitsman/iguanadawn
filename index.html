@@ -33,6 +33,9 @@
 	<script src="AsyncTasksManager.js" crossorigin="anonymous"></script>
 	<script src="inputmanager.js" crossorigin="anonymous"></script>
 	<script src="jsonmanager.js" crossorigin="anonymous"></script>
+	<script src="Model3DManager.js" crossorigin="anonymous"></script>
+	<script src="ResourceLoader.js" crossorigin="anonymous"></script>
+	<script src="ResourceCache.js" crossorigin="anonymous"></script>
 	<script src="timemanager.js" crossorigin="anonymous"></script>
 	<script src="polygon.js" crossorigin="anonymous"></script>
 	<script src="runtimeobject.js" crossorigin="anonymous"></script>
@@ -51,10 +54,12 @@
 	<script src="variablescontainer.js" crossorigin="anonymous"></script>
 	<script src="oncetriggers.js" crossorigin="anonymous"></script>
 	<script src="runtimebehavior.js" crossorigin="anonymous"></script>
+	<script src="SpriteAnimator.js" crossorigin="anonymous"></script>
 	<script src="spriteruntimeobject.js" crossorigin="anonymous"></script>
 	<script src="affinetransformation.js" crossorigin="anonymous"></script>
 	<script src="CustomRuntimeObjectInstanceContainer.js" crossorigin="anonymous"></script>
 	<script src="CustomRuntimeObject.js" crossorigin="anonymous"></script>
+	<script src="CustomRuntimeObject2D.js" crossorigin="anonymous"></script>
 	<script src="events-tools/commontools.js" crossorigin="anonymous"></script>
 	<script src="events-tools/variabletools.js" crossorigin="anonymous"></script>
 	<script src="events-tools/runtimescenetools.js" crossorigin="anonymous"></script>
@@ -75,7 +80,7 @@
 	<script src="pixi-renderers/pixi-image-manager.js" crossorigin="anonymous"></script>
 	<script src="pixi-renderers/pixi-bitmapfont-manager.js" crossorigin="anonymous"></script>
 	<script src="pixi-renderers/spriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
-	<script src="pixi-renderers/CustomObjectPixiRenderer.js" crossorigin="anonymous"></script>
+	<script src="pixi-renderers/CustomRuntimeObject2DPixiRenderer.js" crossorigin="anonymous"></script>
 	<script src="pixi-renderers/DebuggerPixiRenderer.js" crossorigin="anonymous"></script>
 	<script src="pixi-renderers/loadingscreen-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="pixi-renderers/pixi-effects-manager.js" crossorigin="anonymous"></script>
@@ -83,11 +88,19 @@
 	<script src="howler-sound-manager/howler-sound-manager.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver-font-manager.js" crossorigin="anonymous"></script>
-	<script src="gdjs-evtsext__draggablephysics__draggablephysics.js" crossorigin="anonymous"></script>
-	<script src="gdjs-evtsext__objectspawner__objectspawner.js" crossorigin="anonymous"></script>
-	<script src="gdjs-evtsext__shakeobject__shakeobject_positionangle.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__countdowntimer__initialconfigurationvalue-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__countdowntimer__istimerattime-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__countdowntimer__istimerfinished-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__countdowntimer__remainingtime-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__countdowntimer__restartcountdown-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__countdowntimer__setcountdown-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__countdowntimer__startcountdown-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__panelspritebutton__buttonfsm.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__panelspritebutton__panelspritebutton.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__pausefocuslost__active-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__recolorizer__definejavascript-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__recolorizer__spriterecolorizer.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__shakeobject__shakeobject_positionanglescale.js" crossorigin="anonymous"></script>
-	<script src="gdjs-evtsext__smoothcamera__smoothcamera.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__angleto4way-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__angleto8way-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__deadzone-func.js" crossorigin="anonymous"></script>
@@ -99,16 +112,25 @@
 	<script src="gdjs-evtsext__spritemultitouchjoystick__isdirectionpushed8way-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__joystickangle-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__joystickforce-func.js" crossorigin="anonymous"></script>
-	<script src="gdjs-evtsext__spritemultitouchjoystick__multitouchbutton.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__multitouchjoystick.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__setbuttonstate-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__setdeadzone-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__setjoystickangle-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__setjoystickforce-func.js" crossorigin="anonymous"></script>
-	<script src="gdjs-evtsext__spritemultitouchjoystick__spritemultitouchjoystick.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__turret__turret.js" crossorigin="anonymous"></script>
 	<script src="Extensions/DebuggerTools/debuggertools.js" crossorigin="anonymous"></script>
-	<script src="Extensions/DraggableBehavior/draggableruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/DestroyOutsideBehavior/destroyoutsideruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Lighting/lightobstacleruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Lighting/lightruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Lighting/lightruntimeobject.js" crossorigin="anonymous"></script>
 	<script src="Extensions/LinkedObjects/linkedobjects.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Multiplayer/messageManager.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Multiplayer/multiplayerVariablesManager.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Multiplayer/multiplayercomponents.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Multiplayer/multiplayerobjectruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Multiplayer/multiplayertools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Multiplayer/peer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Multiplayer/peerJsHelper.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PanelSpriteObject/panelspriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PanelSpriteObject/panelspriteruntimeobject.js" crossorigin="anonymous"></script>
 	<script src="Extensions/ParticleSystem/particleemitterobject-pixi-renderer.js" crossorigin="anonymous"></script>
@@ -117,12 +139,25 @@
 	<script src="Extensions/PlatformBehavior/platformerobjectruntimebehavior.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PlatformBehavior/platformruntimebehavior.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PlatformBehavior/platformtools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PlayerAuthentication/playerauthenticationcomponents.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PlayerAuthentication/playerauthenticationtools.js" crossorigin="anonymous"></script>
 	<script src="Extensions/SystemInfo/systeminfotools.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TextObject/textruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TextObject/textruntimeobject.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TweenBehavior/TweenManager.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TweenBehavior/tweenruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/AnimatableBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/EffectBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/FlippableBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/OpacityBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/ResizableBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/ScalableBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/TextContainerBehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/HemisphereLight.js" crossorigin="anonymous"></script>
 	<script src="code0.js" crossorigin="anonymous"></script>
+	<script src="code1.js" crossorigin="anonymous"></script>
 	<script src="data.js" crossorigin="anonymous"></script>
 
 
