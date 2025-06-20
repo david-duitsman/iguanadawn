@@ -16,6 +16,8 @@ gdjs.StartScreenCode.GDStaticEnemyLookRightObjects1= [];
 gdjs.StartScreenCode.GDStaticEnemyLookRightObjects2= [];
 gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects1= [];
 gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects2= [];
+gdjs.StartScreenCode.GDTextVersionObjects1= [];
+gdjs.StartScreenCode.GDTextVersionObjects2= [];
 
 
 gdjs.StartScreenCode.eventsList0 = function(runtimeScene) {
@@ -148,6 +150,8 @@ gdjs.StartScreenCode.GDStaticEnemyLookRightObjects1.length = 0;
 gdjs.StartScreenCode.GDStaticEnemyLookRightObjects2.length = 0;
 gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects1.length = 0;
 gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects2.length = 0;
+gdjs.StartScreenCode.GDTextVersionObjects1.length = 0;
+gdjs.StartScreenCode.GDTextVersionObjects2.length = 0;
 
 gdjs.StartScreenCode.eventsList0(runtimeScene);
 gdjs.StartScreenCode.GDLogin_9595ButtonObjects1.length = 0;
@@ -166,6 +170,8 @@ gdjs.StartScreenCode.GDStaticEnemyLookRightObjects1.length = 0;
 gdjs.StartScreenCode.GDStaticEnemyLookRightObjects2.length = 0;
 gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects1.length = 0;
 gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects2.length = 0;
+gdjs.StartScreenCode.GDTextVersionObjects1.length = 0;
+gdjs.StartScreenCode.GDTextVersionObjects2.length = 0;
 
 
 return;
