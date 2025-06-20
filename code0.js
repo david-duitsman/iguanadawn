@@ -758,7 +758,7 @@ gdjs.GameCode.GDSprite1Objects2.length = 0;
     gdjs.GameCode.GDSpawnerObjects2[i].setX(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(22)));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDSpawnerObjects2.length ;i < len;++i) {
-    gdjs.GameCode.GDSpawnerObjects2[i].setY(gdjs.GameCode.GDSpawnerObjects2[i].getY() - (gdjs.randomInRange(0, 2)));
+    gdjs.GameCode.GDSpawnerObjects2[i].setY(gdjs.GameCode.GDSpawnerObjects2[i].getY() - (gdjs.randomInRange(0, 35)));
 }
 }{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDSprite1Objects2Objects, (( gdjs.GameCode.GDSpawnerObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDSpawnerObjects2[0].getPointX("")), (( gdjs.GameCode.GDSpawnerObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDSpawnerObjects2[0].getPointY("")), "");
 }{for(var i = 0, len = gdjs.GameCode.GDSprite1Objects2.length ;i < len;++i) {
