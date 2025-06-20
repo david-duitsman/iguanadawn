@@ -394,6 +394,10 @@ gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAn
 gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.ShakeObject_PositionAngleScaleContext.GDObjectObjects3.length = 0;
 
 gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.ShakeObject_PositionAngleScaleContext.eventsList1(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.ShakeObject_PositionAngleScaleContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.ShakeObject_PositionAngleScaleContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.ShakeObject_PositionAngleScaleContext.GDObjectObjects3.length = 0;
+
 
 return;
 }
@@ -1919,7 +1923,7 @@ gdjs.copyArray(gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeOb
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14119628);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14633428);
 }
 }
 if (isConditionTrue_0) {
@@ -2036,6 +2040,14 @@ gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAn
 gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.doStepPostEventsContext.GDObjectObjects7.length = 0;
 
 gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.doStepPostEventsContext.eventsList23(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.doStepPostEventsContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.doStepPostEventsContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.doStepPostEventsContext.GDObjectObjects3.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.doStepPostEventsContext.GDObjectObjects4.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.doStepPostEventsContext.GDObjectObjects5.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.doStepPostEventsContext.GDObjectObjects6.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.doStepPostEventsContext.GDObjectObjects7.length = 0;
+
 
 return;
 }
@@ -2138,6 +2150,9 @@ gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAn
 gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.StopShakingContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.StopShakingContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.StopShakingContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.StopShakingContext.GDObjectObjects2.length = 0;
+
 
 return;
 }
@@ -2236,6 +2251,9 @@ gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAn
 gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.IsShakingContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.IsShakingContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.IsShakingContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAngleScale.prototype.IsShakingContext.GDObjectObjects2.length = 0;
+
 
 return !!eventsFunctionContext.returnValue;
 }

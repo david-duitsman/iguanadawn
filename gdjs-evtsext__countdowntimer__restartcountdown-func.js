@@ -80,6 +80,7 @@ if (argName === "ClockName") return ClockName;
 
 gdjs.evtsExt__CountdownTimer__RestartCountdown.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return;
 }
 

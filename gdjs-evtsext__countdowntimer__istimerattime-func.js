@@ -82,6 +82,7 @@ if (argName === "TimeInSeconds") return TimeInSeconds;
 
 gdjs.evtsExt__CountdownTimer__IsTimerAtTime.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return !!eventsFunctionContext.returnValue;
 }
 

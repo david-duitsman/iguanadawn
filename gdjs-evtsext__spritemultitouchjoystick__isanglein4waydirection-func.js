@@ -138,6 +138,7 @@ if (argName === "Direction") return Direction;
 
 gdjs.evtsExt__SpriteMultitouchJoystick__IsAngleIn4WayDirection.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return !!eventsFunctionContext.returnValue;
 }
 

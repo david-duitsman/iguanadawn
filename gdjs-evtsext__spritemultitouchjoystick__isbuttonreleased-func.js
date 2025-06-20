@@ -82,6 +82,7 @@ if (argName === "Button") return Button;
 
 gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return !!eventsFunctionContext.returnValue;
 }
 

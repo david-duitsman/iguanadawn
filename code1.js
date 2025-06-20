@@ -150,6 +150,23 @@ gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects1.length = 0;
 gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects2.length = 0;
 
 gdjs.StartScreenCode.eventsList0(runtimeScene);
+gdjs.StartScreenCode.GDLogin_9595ButtonObjects1.length = 0;
+gdjs.StartScreenCode.GDLogin_9595ButtonObjects2.length = 0;
+gdjs.StartScreenCode.GDLobby_9595ButtonObjects1.length = 0;
+gdjs.StartScreenCode.GDLobby_9595ButtonObjects2.length = 0;
+gdjs.StartScreenCode.GDPlay_9595ButtonObjects1.length = 0;
+gdjs.StartScreenCode.GDPlay_9595ButtonObjects2.length = 0;
+gdjs.StartScreenCode.GDNewLightObjects1.length = 0;
+gdjs.StartScreenCode.GDNewLightObjects2.length = 0;
+gdjs.StartScreenCode.GDMenuBackgroundObjects1.length = 0;
+gdjs.StartScreenCode.GDMenuBackgroundObjects2.length = 0;
+gdjs.StartScreenCode.GDStaticEnemyLookLeftObjects1.length = 0;
+gdjs.StartScreenCode.GDStaticEnemyLookLeftObjects2.length = 0;
+gdjs.StartScreenCode.GDStaticEnemyLookRightObjects1.length = 0;
+gdjs.StartScreenCode.GDStaticEnemyLookRightObjects2.length = 0;
+gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects1.length = 0;
+gdjs.StartScreenCode.GDLeaderboard_9595ButtonObjects2.length = 0;
+
 
 return;
 
