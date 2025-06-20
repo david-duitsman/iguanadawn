@@ -13,7 +13,7 @@ gdjs.LeaderboardBackgroundCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15086916);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10709332);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.leaderboards.displayLeaderboard(runtimeScene, "b9f1a03b-3886-4cfa-9f5d-e141c49d1b1c", true);
