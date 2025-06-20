@@ -13,7 +13,7 @@ gdjs.LeaderboardBackgroundCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13433652);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15086916);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.leaderboards.displayLeaderboard(runtimeScene, "b9f1a03b-3886-4cfa-9f5d-e141c49d1b1c", true);
@@ -67,6 +67,11 @@ gdjs.LeaderboardBackgroundCode.GDError_9595Loading_9595LeaderboardObjects1.lengt
 gdjs.LeaderboardBackgroundCode.GDError_9595Loading_9595LeaderboardObjects2.length = 0;
 
 gdjs.LeaderboardBackgroundCode.eventsList0(runtimeScene);
+gdjs.LeaderboardBackgroundCode.GDLoadingObjects1.length = 0;
+gdjs.LeaderboardBackgroundCode.GDLoadingObjects2.length = 0;
+gdjs.LeaderboardBackgroundCode.GDError_9595Loading_9595LeaderboardObjects1.length = 0;
+gdjs.LeaderboardBackgroundCode.GDError_9595Loading_9595LeaderboardObjects2.length = 0;
+
 
 return;
 

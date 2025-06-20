@@ -82,6 +82,7 @@ if (argName === "DeadZoneRadius") return DeadZoneRadius;
 
 gdjs.evtsExt__SpriteMultitouchJoystick__SetDeadZone.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return;
 }
 

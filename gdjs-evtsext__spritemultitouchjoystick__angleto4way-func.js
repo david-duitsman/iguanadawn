@@ -79,6 +79,7 @@ if (argName === "Angle") return Angle;
 
 gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo4Way.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 

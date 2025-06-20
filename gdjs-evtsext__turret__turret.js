@@ -746,6 +746,10 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectOb
 gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects3.length = 0;
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.eventsList9(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects3.length = 0;
+
 
 return;
 }
@@ -844,6 +848,9 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1.l
 gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects2.length = 0;
+
 
 return !!eventsFunctionContext.returnValue;
 }
@@ -936,6 +943,9 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.GDObjectObjec
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.GDObjectObjects2.length = 0;
+
 
 return;
 }
@@ -1028,6 +1038,9 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.GDObje
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.GDObjectObjects2.length = 0;
+
 
 return;
 }
@@ -1141,6 +1154,9 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects1.
 gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects2.length = 0;
+
 
 return;
 }
@@ -1242,6 +1258,9 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleTowardContext.GDObje
 gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleTowardContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleTowardContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleTowardContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleTowardContext.GDObjectObjects2.length = 0;
+
 
 return;
 }
@@ -1484,6 +1503,10 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects3.length = 0;
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.eventsList2(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects3.length = 0;
+
 
 return;
 }
@@ -1703,6 +1726,10 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObje
 gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects3.length = 0;
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.eventsList1(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects3.length = 0;
+
 
 return;
 }
@@ -1792,6 +1819,9 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.GDObjectObjects
 gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.GDObjectObjects2.length = 0;
+
 
 return Number(eventsFunctionContext.returnValue) || 0;
 }

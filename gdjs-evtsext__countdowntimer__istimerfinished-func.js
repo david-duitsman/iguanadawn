@@ -81,6 +81,7 @@ if (argName === "ClockName") return ClockName;
 
 gdjs.evtsExt__CountdownTimer__IsTimerFinished.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return !!eventsFunctionContext.returnValue;
 }
 

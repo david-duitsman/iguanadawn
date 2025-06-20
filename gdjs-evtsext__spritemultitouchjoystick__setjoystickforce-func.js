@@ -82,6 +82,7 @@ if (argName === "Value") return Value;
 
 gdjs.evtsExt__SpriteMultitouchJoystick__SetJoystickForce.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return;
 }
 

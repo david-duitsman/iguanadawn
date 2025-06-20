@@ -94,6 +94,7 @@ if (argName === "Direction") return Direction;
 
 gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed4Way.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return !!eventsFunctionContext.returnValue;
 }
 

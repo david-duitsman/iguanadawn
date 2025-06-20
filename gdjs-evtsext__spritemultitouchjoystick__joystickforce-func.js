@@ -80,6 +80,7 @@ if (argName === "JoystickIdentifier") return JoystickIdentifier;
 
 gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 

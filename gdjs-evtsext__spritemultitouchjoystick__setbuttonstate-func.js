@@ -82,6 +82,7 @@ if (argName === "ButtonState") return ButtonState;
 
 gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState.eventsList0(runtimeScene, eventsFunctionContext);
 
+
 return;
 }
 
