@@ -6,6 +6,7 @@ if (typeof gdjs.evtsExt__CountdownTimer__StartCountdown !== "undefined") {
 }
 
 gdjs.evtsExt__CountdownTimer__StartCountdown = {};
+gdjs.evtsExt__CountdownTimer__StartCountdown.idToCallbackMap = new Map();
 
 
 gdjs.evtsExt__CountdownTimer__StartCountdown.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -15,15 +16,16 @@ gdjs.evtsExt__CountdownTimer__StartCountdown.eventsList0 = function(runtimeScene
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__CountdownTimer").getChild("Clocks").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("ClockName") : "")).getChild("Time")) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__CountdownTimer").getChild("Clocks").getChild("" + eventsFunctionContext.getArgument("ClockName")).getChild("Time")) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("ZeroNumbers") : false);
+{isConditionTrue_0 = !eventsFunctionContext.getArgument("ZeroNumbers");
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "__CountdownTimer.Repeat");
-}}
+}
+}
 
 }
 
@@ -36,8 +38,10 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 1, "__CountdownTimer.Repeat");
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "__CountdownTimer.Repeat");
-}{runtimeScene.getScene().getVariables().get("__CountdownTimer").getChild("Clocks").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("ClockName") : "")).getChild("Time").sub(1);
-}}
+}
+{runtimeScene.getScene().getVariables().get("__CountdownTimer").getChild("Clocks").getChild("" + eventsFunctionContext.getArgument("ClockName")).getChild("Time").sub(1);
+}
+}
 
 }
 
@@ -45,6 +49,7 @@ if (isConditionTrue_0) {
 };
 
 gdjs.evtsExt__CountdownTimer__StartCountdown.func = function(runtimeScene, ClockName, ZeroNumbers, parentEventsFunctionContext) {
+let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -67,14 +72,17 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
-        eventsFunctionContext._objectArraysMap[objectName].push(object);
+        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -82,7 +90,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

@@ -6,9 +6,10 @@ if (typeof gdjs.evtsExt__PauseFocusLost__Active !== "undefined") {
 }
 
 gdjs.evtsExt__PauseFocusLost__Active = {};
+gdjs.evtsExt__PauseFocusLost__Active.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__PauseFocusLost__Active.userFunc0x9e0230 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PauseFocusLost__Active.userFunc0x1624880 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var sound_manager = runtimeScene.getGame().getSoundManager();
 var volumen = sound_manager.getGlobalVolume();
@@ -28,7 +29,7 @@ gdjs.evtsExt__PauseFocusLost__Active.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__PauseFocusLost__Active.userFunc0x9e0230(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__PauseFocusLost__Active.userFunc0x1624880(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -36,6 +37,7 @@ gdjs.evtsExt__PauseFocusLost__Active.userFunc0x9e0230(runtimeScene, typeof event
 };
 
 gdjs.evtsExt__PauseFocusLost__Active.func = function(runtimeScene, parentEventsFunctionContext) {
+let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -58,14 +60,17 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
-        eventsFunctionContext._objectArraysMap[objectName].push(object);
+        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -73,7 +78,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

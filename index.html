@@ -60,6 +60,7 @@
 	<script src="CustomRuntimeObjectInstanceContainer.js" crossorigin="anonymous"></script>
 	<script src="CustomRuntimeObject.js" crossorigin="anonymous"></script>
 	<script src="CustomRuntimeObject2D.js" crossorigin="anonymous"></script>
+	<script src="indexeddb.js" crossorigin="anonymous"></script>
 	<script src="events-tools/commontools.js" crossorigin="anonymous"></script>
 	<script src="events-tools/variabletools.js" crossorigin="anonymous"></script>
 	<script src="events-tools/runtimescenetools.js" crossorigin="anonymous"></script>
@@ -100,6 +101,7 @@
 	<script src="gdjs-evtsext__pausefocuslost__active-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__recolorizer__definejavascript-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__recolorizer__spriterecolorizer.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__shakeobject__shakeobject_positionangle.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__shakeobject__shakeobject_positionanglescale.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__angleto4way-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__angleto8way-func.js" crossorigin="anonymous"></script>
@@ -172,7 +174,8 @@
 
     (function() {
         //Initialization
-        var game = new gdjs.RuntimeGame(gdjs.projectData, {});
+        if (["localhost","127.0.0.1","david-duitsman.github.io"].indexOf(location.hostname) === -1) { throw new Error("This build only runs on an official host."); }
+        var game = new gdjs.RuntimeGame(gdjs.projectData, gdjs.runtimeGameOptions);
 
         //Create a renderer
         game.getRenderer().createStandardCanvas(document.body);
