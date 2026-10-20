@@ -49,6 +49,7 @@
 	<script src="RuntimeCustomObjectLayer.js" crossorigin="anonymous"></script>
 	<script src="timer.js" crossorigin="anonymous"></script>
 	<script src="runtimewatermark.js" crossorigin="anonymous"></script>
+	<script src="named-easings-manager.js" crossorigin="anonymous"></script>
 	<script src="runtimegame.js" crossorigin="anonymous"></script>
 	<script src="variable.js" crossorigin="anonymous"></script>
 	<script src="variablescontainer.js" crossorigin="anonymous"></script>
@@ -173,9 +174,18 @@
 	<script>
 
     (function() {
+        //Check the game files were all loaded (in a preview, they can be exported
+        //again while this page is still loading them).
+        if (!gdjs.projectData) {
+            throw new Error(
+                "The game data was not loaded: some files of the game are missing or could not be read."
+            );
+        }
+
         //Initialization
         if (["localhost","127.0.0.1","david-duitsman.github.io"].indexOf(location.hostname) === -1) { throw new Error("This build only runs on an official host."); }
         var game = new gdjs.RuntimeGame(gdjs.projectData, gdjs.runtimeGameOptions);
+        if (["localhost","127.0.0.1"].indexOf(location.hostname) !== -1) { game.enableMetrics(false); }
 
         //Create a renderer
         game.getRenderer().createStandardCanvas(document.body);
