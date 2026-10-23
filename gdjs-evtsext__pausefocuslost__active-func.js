@@ -9,7 +9,7 @@ gdjs.evtsExt__PauseFocusLost__Active = {};
 gdjs.evtsExt__PauseFocusLost__Active.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__PauseFocusLost__Active.userFunc0x15a8428 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PauseFocusLost__Active.userFunc0x165de98 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var sound_manager = runtimeScene.getGame().getSoundManager();
 var volumen = sound_manager.getGlobalVolume();
@@ -29,7 +29,7 @@ gdjs.evtsExt__PauseFocusLost__Active.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__PauseFocusLost__Active.userFunc0x15a8428(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PauseFocusLost__Active.userFunc0x165de98(runtimeScene, eventsFunctionContext);
 
 }
 
