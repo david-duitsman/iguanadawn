@@ -1,22 +1,23 @@
 
-if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce !== "undefined") {
-  gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState !== "undefined") {
+  gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce = {};
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce.idToCallbackMap = new Map();
+gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0)).getChild("Joystick").getChild("" + eventsFunctionContext.getArgument("JoystickIdentifier")).getChild("Force"));}
+{runtimeScene.getScene().getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0)).getChild("Buttons").getChild("" + eventsFunctionContext.getArgument("Button")).getChild("State").setString("" + eventsFunctionContext.getArgument("ButtonState"));
+}
 }
 
 }
@@ -24,7 +25,7 @@ let isConditionTrue_0 = false;
 
 };
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce.func = function(runtimeScene, ControllerIdentifier, JoystickIdentifier, parentEventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState.func = function(runtimeScene, ControllerIdentifier, Button, ButtonState, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -77,17 +78,18 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
   },
   getArgument: function(argName) {
 if (argName === "ControllerIdentifier") return ControllerIdentifier;
-if (argName === "JoystickIdentifier") return JoystickIdentifier;
+if (argName === "Button") return Button;
+if (argName === "ButtonState") return ButtonState;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return Number(eventsFunctionContext.returnValue) || 0;
+return;
 }
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce.registeredGdjsCallbacks = [];
+gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState.registeredGdjsCallbacks = [];

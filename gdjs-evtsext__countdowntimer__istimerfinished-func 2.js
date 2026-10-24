@@ -1,22 +1,22 @@
 
-if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased !== "undefined") {
-  gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__CountdownTimer__IsTimerFinished !== "undefined") {
+  gdjs.evtsExt__CountdownTimer__IsTimerFinished.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased = {};
-gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.idToCallbackMap = new Map();
+gdjs.evtsExt__CountdownTimer__IsTimerFinished = {};
+gdjs.evtsExt__CountdownTimer__IsTimerFinished.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CountdownTimer__IsTimerFinished.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0)).getChild("Buttons").getChild("" + eventsFunctionContext.getArgument("Button")).getChild("State")) == "Released";
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__CountdownTimer").getChild("Clocks").getChild("" + eventsFunctionContext.getArgument("ClockName")).getChild("Time")) == 0;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
 }
@@ -26,7 +26,7 @@ if (isConditionTrue_0) {
 
 };
 
-gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.func = function(runtimeScene, ControllerIdentifier, Button, parentEventsFunctionContext) {
+gdjs.evtsExt__CountdownTimer__IsTimerFinished.func = function(runtimeScene, ClockName, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -35,8 +35,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SpriteMultitouchJoystick"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SpriteMultitouchJoystick"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("CountdownTimer"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("CountdownTimer"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -78,18 +78,17 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "ControllerIdentifier") return ControllerIdentifier;
-if (argName === "Button") return Button;
+if (argName === "ClockName") return ClockName;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CountdownTimer__IsTimerFinished.eventsList0(runtimeScene, eventsFunctionContext);
 
 
 return !!eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.registeredGdjsCallbacks = [];
+gdjs.evtsExt__CountdownTimer__IsTimerFinished.registeredGdjsCallbacks = [];

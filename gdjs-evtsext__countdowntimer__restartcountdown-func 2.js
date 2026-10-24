@@ -1,22 +1,23 @@
 
-if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__JoystickAngle !== "undefined") {
-  gdjs.evtsExt__SpriteMultitouchJoystick__JoystickAngle.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__CountdownTimer__RestartCountdown !== "undefined") {
+  gdjs.evtsExt__CountdownTimer__RestartCountdown.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickAngle = {};
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickAngle.idToCallbackMap = new Map();
+gdjs.evtsExt__CountdownTimer__RestartCountdown = {};
+gdjs.evtsExt__CountdownTimer__RestartCountdown.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickAngle.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CountdownTimer__RestartCountdown.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0)).getChild("Joystick").getChild("" + eventsFunctionContext.getArgument("JoystickIdentifier")).getChild("Angle"));}
+{runtimeScene.getScene().getVariables().get("__CountdownTimer").getChild("Clocks").getChild("" + eventsFunctionContext.getArgument("ClockName")).getChild("Time").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__CountdownTimer").getChild("Clocks").getChild("" + eventsFunctionContext.getArgument("ClockName")).getChild("TimeRestart")));
+}
 }
 
 }
@@ -24,7 +25,7 @@ let isConditionTrue_0 = false;
 
 };
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickAngle.func = function(runtimeScene, ControllerIdentifier, JoystickIdentifier, parentEventsFunctionContext) {
+gdjs.evtsExt__CountdownTimer__RestartCountdown.func = function(runtimeScene, ClockName, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -33,8 +34,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SpriteMultitouchJoystick"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SpriteMultitouchJoystick"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("CountdownTimer"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("CountdownTimer"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -76,18 +77,17 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "ControllerIdentifier") return ControllerIdentifier;
-if (argName === "JoystickIdentifier") return JoystickIdentifier;
+if (argName === "ClockName") return ClockName;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickAngle.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CountdownTimer__RestartCountdown.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return Number(eventsFunctionContext.returnValue) || 0;
+return;
 }
 
-gdjs.evtsExt__SpriteMultitouchJoystick__JoystickAngle.registeredGdjsCallbacks = [];
+gdjs.evtsExt__CountdownTimer__RestartCountdown.registeredGdjsCallbacks = [];
