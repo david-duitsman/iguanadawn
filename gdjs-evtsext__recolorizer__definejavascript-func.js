@@ -9,7 +9,7 @@ gdjs.evtsExt__Recolorizer__DefineJavaScript = {};
 gdjs.evtsExt__Recolorizer__DefineJavaScript.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x14219e0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x132f898 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs.__recolorizerExtension) {
     return;
@@ -419,7 +419,7 @@ gdjs.evtsExt__Recolorizer__DefineJavaScript.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x14219e0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x132f898(runtimeScene, eventsFunctionContext);
 
 }
 
